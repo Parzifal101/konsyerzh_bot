@@ -1,0 +1,23 @@
+{
+  "name": "geocode-script",
+  "version": "1.0.0",
+  "description": "Geocoding script",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      "input.xlsx"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "xlsx": "^0.17.0"
+  }
+}
