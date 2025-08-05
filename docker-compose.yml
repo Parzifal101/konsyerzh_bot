@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  auth: 
+    build: ./microservices/auth
+    ports:
+      - 8000:80
+
+  image: 
+    build: ./microservices/image_check
+    ports:
+      - 8001:80
+
+  gateway: 
+    build: ./microservices/gateway
+    ports:
+      - 8003:80

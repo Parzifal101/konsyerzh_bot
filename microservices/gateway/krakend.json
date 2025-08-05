@@ -1,0 +1,23 @@
+{   
+    "$schema": "https://www.krakend.io/schema/v2.10/krakend.json",
+    "version": 3,
+    "endpoints": [
+        {
+          "endpoint": "/hello",
+          "backend": [
+            {
+              "url_pattern": "/auth",
+              "host": [
+                "https://my.foo-api.com"
+              ]
+            },
+            {
+              "url_pattern": "/image",
+              "host": [
+                "https://my.bar-api.com"
+              ]
+            }
+          ]
+        }
+      ]
+}

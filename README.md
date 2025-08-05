@@ -30,3 +30,8 @@ my_fastapi_monorepo/
 ├── docker-compose.yml        # Локальный запуск
 ├── Makefile                  # Упрощение команд
 └── README.md
+
+
+https://habr.com/ru/companies/selectel/articles/881022/
+
+$krakend check --config ./krakend.toml --debug --lint
